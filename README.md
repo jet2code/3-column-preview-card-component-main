@@ -24,5 +24,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-grid-flex-and-media-queries-Ab9Zjy9Pjf)
+- Live Site URL: [Live Site](jet2code.github.io)
