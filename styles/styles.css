@@ -38,13 +38,6 @@
   color: hsl(0, 0%, 95%);
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -64,6 +57,8 @@ p {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 5rem;
@@ -93,12 +88,12 @@ p {
 }
 
 .div-padding {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 2.9rem 3rem 2.5rem;
 }
 
-.div-margin {
-  padding-inline: 3rem;
+.grid {
+  display: grid;
+  justify-items: start;
 }
 
 .sedans {
@@ -111,6 +106,36 @@ p {
 }
 
 .luxury {
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   gap: 2rem;
+}
+
+.container > div a:last-child:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  outline: 0.2rem solid hsl(0, 0%, 95%);
+}
+
+@media (min-width: 84rem) {
+  .container {
+    flex-direction: row;
+    margin-left: 17.5rem;
+    margin-right: 17.5rem;
+  }
+
+  .sedans {
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .luxury {
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .container > div a:last-child {
+    margin-top: 3rem;
+  }
 }
